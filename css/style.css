@@ -215,6 +215,11 @@
     text-decoration-line: none;
 }
 
+.catalog__button-link:hover {
+    color: #FFFFFF;
+    background-color: var(--pink);
+}
+
 .feature {
     height: 341px;
     background-color: #222224;
@@ -231,6 +236,61 @@
 .feature__item {
     text-align: center;
 }
+
+.catalog__item-button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 13px 15px 13px 50px;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.catalog__item-button::before {
+    position: absolute;
+    top: 25%;
+    left: 13px;
+    content: url(./../img/in-cart.svg);
+}
+.catalog__item-wrapper-overlay {
+    position: relative;
+}
+  
+  .button-overlay {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  }
+  
+  .catalog__item-wrapper-overlay:before {
+    content: '';
+    width: 100%;
+    min-height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+  }
+  
+  .overlay,
+  .catalog__item-button {
+    display: none;
+  }
+  
+  .catalog__item-wrapper-overlay:before {
+    display: none;
+  }
+  
+  .catalog__item:hover .catalog__item-button,
+  .catalog__item:hover .overlay,
+  .catalog__item:hover .catalog__item-wrapper-overlay:before {
+    display: block;
+  } 
 
 .feature__item-title {
     margin: 28px auto 0;
@@ -307,6 +367,22 @@
     margin: 0 8px 0 0;
 }
 
+.footer__item-svg {
+    fill: white;
+}
+
+.footer__item-svg .icon {
+    fill: var(--black);
+}
+
+.footer__item-svg:hover .icon {
+    fill: white;
+}
+
+.footer__item-svg:hover {
+    fill: var(--pink);
+}
+
 .footer__subscribe-title {
     font-weight: 700;
     font-size: 24px;
@@ -345,4 +421,135 @@
 .footer__button-text {
     text-transform: capitalize;
     color: #FFFFFF;
+}
+
+.registration__header {
+    background-color: #F8F3F4;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+
+}
+
+.registration__header-title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+
+.registration__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registration__box-form {
+    width: 360px;
+}
+
+.registration__form-title {
+    color: #222222;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.registration__form-family {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__form-radio {
+    display: flex;
+    align-items: center;
+}
+
+.registration__form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__form-title {
+    margin: 0 0 20px 0;
+}
+
+.input_text {
+    width: 324px;
+    height: 45px;
+    margin: 2px 0 18px 0;
+    color: #B1B1B1;
+    padding: 0 16px;
+}
+
+.input_text:hover {
+    border: 2px solid var(--pink);
+}
+
+.registration__radio-text {
+    color: #000000;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.registration__form-radio {
+    margin: 11px 0 33px;
+}
+
+.registration__form-help {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: -5px 0 0;
+}
+
+.registration__form-submit {
+    margin: 39px 0 96px 0;
+    padding: 16px 66px 16px 29px;
+    text-transform: uppercase;
+    background-color: var(--pink);
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 17px; 
+    border: none; 
+}
+
+.registration__form-submit:active {
+    margin: 37px 0 96px 0;
+    background-color: #FFFFFF;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.loyality__form {
+    width: 652px
+}
+
+.loyality__form-title {
+    text-transform: uppercase;
+}
+
+.loyality__form-title, .loyality__form-subtitle, .loyality__item{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.loyality__form-title, .loyality__form-subtitle {
+    margin: 0 0 22px;
+}
+
+.loyality__item {
+    margin-bottom: 16px;
+}
+
+.loyality__item::before {
+    content: url(./../img/decor-list.svg);
+    margin-right: 23px;
 }
