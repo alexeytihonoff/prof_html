@@ -256,6 +256,11 @@
     left: 13px;
     content: url(./../img/in-cart.svg);
 }
+
+.catalog__item-button:hover {
+    border: 1px solid var(--pink);
+}
+
 .catalog__item-wrapper-overlay {
     position: relative;
 }
