@@ -1,0 +1,104 @@
+.registration__header {
+    background-color: #F8F3F4;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+
+    &-title {
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+        text-transform: uppercase;
+    }
+}
+
+.registration__box {
+    @include flex-space-between;
+
+    &-form {
+        width: 360px;
+    }
+}
+
+.registration__form {
+    &-title {
+        color: $black;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+    }
+    
+    &-family {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-radio {
+        display: flex;
+        align-items: center;
+    }
+    
+    &-login {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &-title {
+        margin: 0 0 20px 0;
+    }
+    
+    &-radio {
+        margin: 11px 0 33px;
+    }
+    
+    &-help {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+        margin: -5px 0 0;
+    }
+    
+    &-submit {
+        margin: 39px 0 96px 0;
+        padding: 16px 66px 16px 29px;
+        text-transform: uppercase;
+        background-color: $pink;
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 17px; 
+        border: none; 
+
+        &:active {
+            margin: 37px 0 96px 0;
+            background-color: #FFFFFF;
+            color: $pink;
+            border: 1px solid $pink;
+        }
+    }
+}
+
+.registration__radio-text {
+    color: $black;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.input_text {
+    width: 324px;
+    height: 45px;
+    margin: 2px 0 18px 0;
+    color: #B1B1B1;
+    padding: 0 16px;
+
+    &:hover {
+        border: 2px solid $pink;
+    }
+}

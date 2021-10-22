@@ -1,0 +1,29 @@
+.loyality__form {
+    width: 652px;
+
+    &-title {
+        text-transform: uppercase;
+    }
+    
+    &-title, &-subtitle{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    
+    &-title, &-subtitle {
+        margin: 0 0 22px;
+    }
+}
+
+.loyality__item {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+
+    &::before {
+        content: url(./../img/decor-list.svg);
+        margin-right: 23px;
+    }
+}
