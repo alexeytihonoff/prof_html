@@ -1,0 +1,113 @@
+.catalog__title {
+    margin: 96px auto 0;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+.catalog__text {
+    text-align: center;
+    color: #9F9F9F;
+}
+
+.catalog__list {
+    @include flex-space-between;
+    flex-wrap: wrap;
+    margin: 48px auto 0;
+}
+
+.catalog__item {
+    width: 360px;
+    height: 581px;
+    background-color: #F8F8F8;
+    margin: 0 auto 30px;
+
+    &-title {
+        margin: 24px 0 0 18px;
+        text-transform: uppercase;
+    }
+    
+    &-text {
+        margin: 12px 0 0 18px;
+        color: #5D5D5D;
+    }
+    
+    &-price {
+        margin: 18px 0 0 18px;
+        color: $pink;
+
+        &:before {
+            content: '$';
+        }
+    }    
+
+    &-button {
+        display: none;
+        position: absolute;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        padding: 13px 15px 13px 50px;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+
+        &::before {
+            position: absolute;
+            top: 25%;
+            left: 13px;
+            content: url(./../img/in-cart.svg);
+        }
+        
+        &:hover {
+            border: 1px solid $pink;
+        }
+    }
+    
+    &-wrapper-overlay {
+        position: relative;
+
+        &:before {
+            display: none;
+            content: '';
+            width: 100%;
+            min-height: 100%;
+            background: rgba(58, 56, 56, 0.86);
+            position: absolute;
+            top: 0;
+        }
+    }  
+
+    &:hover &-button,
+    &:hover,
+    &:hover &-wrapper-overlay:before {
+      display: block;
+    }   
+}
+
+.catalog__button {
+    margin: 32px auto 0;
+    text-align: center;
+
+    &-link {
+        border: 1px solid $pink;
+        padding: 14px 38px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $pink;
+        text-transform: capitalize;
+        text-decoration-line: none;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: $pink;
+        }
+    }
+}
+  
+  
+  
+ 

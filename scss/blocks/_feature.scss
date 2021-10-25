@@ -1,0 +1,29 @@
+.feature {
+    height: 341px;
+    background-color: $black;
+    margin: 109px auto 0;
+
+    &__list {
+        @include flex-space-between;
+        height: 100%;
+        align-items: center;
+    }
+    
+    &__item {
+        text-align: center;
+
+        &-title {
+            margin: 28px auto 0;
+            color: #FBFBFB;
+            text-transform: capitalize;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &-text {
+            margin: 16px auto 0;
+            font-weight: 300;
+            color: #FBFBFB;
+        }
+    }
+}
